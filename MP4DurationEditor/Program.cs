@@ -14,8 +14,7 @@ namespace MP4DurationEditor
         private static byte[] LmvhdHex = { 0x6C, 0x6D, 0x76, 0x68, 0x64 };
         private static void Main(string[] args)
         {
-            Console.Write("Enter video path: ");
-            var videoPath = Console.ReadLine();
+            var videoPath = Prompt("Enter video path: ");
  	    videoPath = videoPath.Trim();
             if(videoPath != null && !videoPath.EndsWith(".mp4")) throw new Exception("Only .mp4 videos are supported.");
             try
