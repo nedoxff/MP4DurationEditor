@@ -9,7 +9,11 @@ I was inspired by infinite discord videos, so i wanted to automate that.
 To run this script, you'll need to build it.
 It uses .NET Core, which you can install here: https://dotnet.microsoft.com/download
 
-Just `cd` into the project directory (with the .csproj file) and enter: `dotnet build --configuration Release`
+1. Clone the repository: `git clone https://github.com/NedoProgrammer/MP4DurationEditor.git`
+
+2. `cd` into the project directory: `cd MP4DurationEditor`
+
+3. Build the project: `dotnet build --configuration Release`  
 
 When finished, you'll find the executable in `/bin/Release/netcoreapp3.1/`
 ## Dependencies
