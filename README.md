@@ -9,9 +9,9 @@ I was inspired by infinite discord videos, so i wanted to automate that.
 To run this script, you'll need to build it.
 It uses .NET Core, which you can install here: https://dotnet.microsoft.com/download
 
-Just `cd` into the project directory (with the .csproj file) and enter: `dotnet build`
+Just `cd` into the project directory (with the .csproj file) and enter: `dotnet build --configuration Release`
 
-When finished, you'll find the executable in `/bin/netcoreapp3.1/`
+When finished, you'll find the executable in `/bin/Release/netcoreapp3.1/`
 ## Dependencies
 ExifTool for getting video's metadata: https://exiftool.org/
 
