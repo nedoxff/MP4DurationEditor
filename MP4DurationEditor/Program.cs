@@ -16,6 +16,7 @@ namespace MP4DurationEditor
         {
             Console.Write("Enter video path: ");
             var videoPath = Console.ReadLine();
+			videoPath = videoPath.Trim();
             if(videoPath != null && !videoPath.EndsWith(".mp4")) throw new Exception("Only .mp4 videos are supported.");
             try
             {
