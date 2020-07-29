@@ -16,7 +16,7 @@ namespace MP4DurationEditor
         {
             Console.Write("Enter video path: ");
             var videoPath = Console.ReadLine();
-			videoPath = videoPath.Trim();
+ 	    videoPath = videoPath.Trim();
             if(videoPath != null && !videoPath.EndsWith(".mp4")) throw new Exception("Only .mp4 videos are supported.");
             try
             {
@@ -49,7 +49,7 @@ namespace MP4DurationEditor
                 //Replace the lmvhd part with the new, edited part
                 hexString = hexString.Replace(lmvhdPart, newText);
                 File.WriteAllBytes(newFilePath, Hex.FromHexString(hexString));
-				Console.WriteLine($"Done!");
+		Console.WriteLine($"Done!");
             }
             catch (Exception e)
             {
